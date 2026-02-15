@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Web - Digital Solutions Agency | Web, Mobile & E-commerce Development</title>
+    <meta name="description" content="Next Web builds modern digital solutions including web development, mobile apps, UI/UX design, e-commerce platforms, and SEO marketing services for growing businesses.">
+    <meta name="keywords" content="web development, mobile apps, UI/UX design, e-commerce solutions, SEO marketing, digital agency, software development">
+    <meta name="author" content="Next Web">
+    <meta property="og:title" content="Next Web - Digital Solutions Agency">
+    <meta property="og:description" content="We build digital solutions that drive growth for modern businesses.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M2 3L18 10L2 17V3Z" fill="white"/>
+                </svg>
+                <span>Next Web</span>
+            </div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#home" class="nav-link active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+                <span>Home</span>
+            </a>
+            <a href="#services" class="nav-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+                </svg>
+                <span>Services</span>
+            </a>
+            <a href="#portfolio" class="nav-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                </svg>
+                <span>Portfolio</span>
+            </a>
+            <a href="#testimonials" class="nav-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                </svg>
+                <span>Testimonials</span>
+            </a>
+            <a href="#contact" class="nav-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                <span>Contact</span>
+            </a>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span>abdulmanankatpar6@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <span>+92 309 7553991</span>
+                </div>
+            </div>
+            <button class="btn-contact-sidebar">Contact Us</button>
+            <div class="social-links">
+                <a href="#" class="social-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.14 2.14 4-.79-.03-1.53-.24-2.18-.6v.06c0 2.33 1.66 4.28 3.86 4.72-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.62 1.94 2.42 3.35 4.55 3.39-1.67 1.31-3.77 2.09-6.05 2.09-.39 0-.78-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Navigation (Desktop) -->
+        <nav class="top-nav">
+            <div class="top-nav-links">
+                <a href="#home" class="top-nav-link active">Home</a>
+                <a href="#services" class="top-nav-link">Services</a>
+                <a href="#portfolio" class="top-nav-link">Portfolio</a>
+                <a href="#testimonials" class="top-nav-link">Testimonials</a>
+            </div>
+            <div class="top-nav-actions">
+                <!-- User Profile Dropdown (shown when logged in) -->
+                <div class="user-profile-dropdown" id="userProfileDropdown" style="display: none;">
+                    <button class="user-profile-btn" id="userProfileBtn">
+                        <span class="user-name" id="userNameDisplay">John Doe</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="dropdown-arrow">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </button>
+                    <div class="user-dropdown-menu" id="userDropdownMenu">
+                        <a href="#" class="dropdown-item" id="profileLink">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                            <span>Profile</span>
+                        </a>
+                        <a href="#" class="dropdown-item" id="logoutLink">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                            </svg>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Login/Register Buttons (shown when logged out) -->
+                <div class="auth-buttons" id="authButtons">
+                    <button class="btn-login-icon" id="loginBtn" title="Login / Sign Up">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <button class="btn-contact-top">Contact Us</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <!-- Animated Background -->
+            <div class="hero-bg-animation">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+                <div class="floating-shape shape-4"></div>
+                <div class="grid-lines"></div>
+                <div class="particles-container">
+                    <div class="particle-dot" style="top: 15%; left: 12%; animation-delay: 0s;"></div>
+                    <div class="particle-dot" style="top: 25%; left: 85%; animation-delay: 1s;"></div>
+                    <div class="particle-dot" style="top: 45%; left: 8%; animation-delay: 2s;"></div>
+                    <div class="particle-dot" style="top: 65%; left: 90%; animation-delay: 3s;"></div>
+                    <div class="particle-dot" style="top: 80%; left: 15%; animation-delay: 4s;"></div>
+                    <div class="particle-dot" style="top: 35%; left: 75%; animation-delay: 2.5s;"></div>
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typing-text" data-text="We Build Digital Solutions That Drive Growth"></span>
+                </h1>
+                <p class="hero-subtitle">Web, Mobile, and E-commerce solutions designed for modern businesses.</p>
+                <button class="btn-primary hero-btn pulse-btn">Contact Us</button>
+            </div>
+            <div class="hero-image">
+                <svg viewBox="0 0 600 400" class="hero-illustration">
+                    <defs>
+                        <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#e0f2fe;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#bae6fd;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Desktop Monitor -->
+                    <g class="device-desktop">
+                        <rect x="80" y="100" width="280" height="180" rx="6" fill="#1e3a8a"/>
+                        <rect x="88" y="108" width="264" height="152" fill="#3b82f6"/>
+                        <rect x="100" y="120" width="100" height="65" rx="3" fill="#60a5fa"/>
+                        <rect x="210" y="120" width="130" height="25" rx="3" fill="#93c5fd"/>
+                        <rect x="210" y="152" width="130" height="25" rx="3" fill="#dbeafe"/>
+                        <circle cx="275" cy="215" r="22" fill="#0d6efd"/>
+                        <path d="M275 203 L275 227 M263 215 L287 215" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                        <rect x="200" y="280" width="40" height="6" rx="3" fill="#64748b"/>
+                        <path d="M220 286 L180 310 L260 310 Z" fill="#475569"/>
+                    </g>
+                    
+                    <!-- Tablet -->
+                    <g class="device-tablet">
+                        <rect x="340" y="150" width="120" height="160" rx="6" fill="#0f172a"/>
+                        <rect x="348" y="158" width="104" height="136" fill="#3b82f6"/>
+                        <rect x="358" y="168" width="42" height="35" rx="2" fill="#60a5fa"/>
+                        <rect x="358" y="210" width="84" height="12" rx="2" fill="#93c5fd"/>
+                        <rect x="358" y="228" width="84" height="12" rx="2" fill="#dbeafe"/>
+                        <circle cx="400" cy="300" r="6" fill="#cbd5e1"/>
+                    </g>
+                    
+                    <!-- Mobile Phone -->
+                    <g class="device-mobile">
+                        <rect x="490" y="120" width="80" height="140" rx="6" fill="#0f172a"/>
+                        <rect x="498" y="132" width="64" height="116" fill="#3b82f6"/>
+                        <rect x="506" y="140" width="48" height="32" rx="2" fill="#60a5fa"/>
+                        <circle cx="530" cy="190" r="14" fill="#0d6efd"/>
+                        <path d="M530 183 L530 197" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M523 190 L537 190" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <rect x="506" y="210" width="48" height="6" rx="2" fill="#93c5fd"/>
+                        <rect x="506" y="222" width="48" height="6" rx="2" fill="#dbeafe"/>
+                        <circle cx="530" cy="242" r="4" fill="#cbd5e1"/>
+                    </g>
+                    
+                    <!-- Decorative circles -->
+                    <circle cx="120" cy="60" r="4" fill="#0dcaf0" opacity="0.6"/>
+                    <circle cx="480" cy="70" r="5" fill="#0dcaf0" opacity="0.5"/>
+                    <circle cx="560" cy="320" r="4" fill="#0dcaf0" opacity="0.6"/>
+                    <circle cx="100" cy="350" r="3" fill="#0d6efd" opacity="0.5"/>
+                    
+                    <!-- Plants -->
+                    <ellipse cx="50" cy="320" rx="12" ry="6" fill="#10b981"/>
+                    <rect x="48" y="320" width="4" height="18" fill="#059669"/>
+                    <ellipse cx="570" cy="340" rx="10" ry="5" fill="#10b981"/>
+                    <rect x="568" y="340" width="4" height="14" fill="#059669"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <h2 class="section-title">Our Services</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card flip-card" data-category="web">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon bounce-icon">
+                                <svg viewBox="0 0 64 64" fill="none">
+                                    <rect x="8" y="14" width="48" height="32" rx="2" fill="#0d6efd"/>
+                                    <rect x="12" y="18" width="40" height="24" fill="#60a5fa"/>
+                                    <rect x="16" y="22" width="16" height="10" rx="1" fill="#93c5fd"/>
+                                    <rect x="34" y="22" width="14" height="3" rx="1" fill="#dbeafe"/>
+                                    <rect x="34" y="27" width="14" height="3" rx="1" fill="#dbeafe"/>
+                                    <rect x="24" y="46" width="16" height="2" fill="#64748b"/>
+                                    <path d="M32 48 L24 52 L40 52 Z" fill="#475569"/>
+                                    <circle cx="44" cy="38" r="6" fill="#0d6efd"/>
+                                    <path d="M44 35 L44 41 M41 38 L47 38" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Web Development</h3>
+                            <p class="service-description">Responsive, fast, scalable websites</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="service-title">Web Development</h3>
+                            <ul class="service-details">
+                                <li>✓ Custom Website Design</li>
+                                <li>✓ Responsive Layouts</li>
+                                <li>✓ Performance Optimization</li>
+                                <li>✓ CMS Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card flip-card" data-category="design">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon bounce-icon">
+                                <svg viewBox="0 0 64 64" fill="none">
+                                    <rect x="14" y="18" width="36" height="28" rx="2" fill="#fbbf24"/>
+                                    <rect x="18" y="22" width="28" height="20" fill="#fde68a"/>
+                                    <path d="M26 30 L32 36 L38 30" stroke="#f59e0b" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="32" cy="32" r="5" fill="#f59e0b"/>
+                                    <rect x="22" y="14" width="20" height="4" rx="2" fill="#0d6efd"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">UI/UX Design</h3>
+                            <p class="service-description">Modern, user-friendly interfaces</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="service-title">UI/UX Design</h3>
+                            <ul class="service-details">
+                                <li>✓ User Research</li>
+                                <li>✓ Wireframing & Prototyping</li>
+                                <li>✓ Visual Design</li>
+                                <li>✓ Usability Testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card flip-card" data-category="mobile">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon bounce-icon">
+                                <svg viewBox="0 0 64 64" fill="none">
+                                    <rect x="20" y="10" width="24" height="44" rx="3" fill="#1e293b"/>
+                                    <rect x="24" y="16" width="16" height="32" fill="#3b82f6"/>
+                                    <rect x="28" y="20" width="8" height="8" rx="1" fill="#60a5fa"/>
+                                    <rect x="28" y="32" width="8" height="3" rx="1" fill="#93c5fd"/>
+                                    <rect x="28" y="37" width="8" height="3" rx="1" fill="#dbeafe"/>
+                                    <circle cx="32" cy="50" r="2" fill="#cbd5e1"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Mobile Apps</h3>
+                            <p class="service-description">iOS & Android applications</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="service-title">Mobile Apps</h3>
+                            <ul class="service-details">
+                                <li>✓ Native iOS & Android</li>
+                                <li>✓ Cross-Platform Apps</li>
+                                <li>✓ App Store Optimization</li>
+                                <li>✓ Maintenance & Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card flip-card" data-category="ecommerce">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon bounce-icon">
+                                <svg viewBox="0 0 64 64" fill="none">
+                                    <circle cx="32" cy="32" r="18" fill="#0d6efd"/>
+                                    <circle cx="32" cy="32" r="12" fill="#60a5fa"/>
+                                    <path d="M32 20 L32 32 L42 32" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="32" cy="32" r="2" fill="white"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">E-commerce Solutions</h3>
+                            <p class="service-description">Custom online store solutions</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="service-title">E-commerce</h3>
+                            <ul class="service-details">
+                                <li>✓ Online Store Setup</li>
+                                <li>✓ Payment Integration</li>
+                                <li>✓ Inventory Management</li>
+                                <li>✓ Analytics & Reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card flip-card" data-category="marketing">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon bounce-icon">
+                                <svg viewBox="0 0 64 64" fill="none">
+                                    <circle cx="32" cy="32" r="18" fill="#0d6efd"/>
+                                    <circle cx="32" cy="32" r="14" fill="#60a5fa"/>
+                                    <circle cx="32" cy="32" r="10" fill="#93c5fd"/>
+                                    <circle cx="32" cy="32" r="4" fill="white"/>
+                                    <path d="M32 14 L32 20 M32 44 L32 50 M14 32 L20 32 M44 32 L50 32" stroke="#0d6efd" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">SEO & Marketing</h3>
+                            <p class="service-description">Drive traffic & grow your brand</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="service-title">SEO & Marketing</h3>
+                            <ul class="service-details">
+                                <li>✓ Search Engine Optimization</li>
+                                <li>✓ Content Marketing</li>
+                                <li>✓ Social Media Marketing</li>
+                                <li>✓ PPC Campaigns</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-primary btn-center">Contact Us</button>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-section">
+            <h2 class="section-title">Why Next Web?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <rect x="14" y="22" width="36" height="24" rx="2" fill="#0d6efd"/>
+                            <rect x="18" y="26" width="28" height="16" fill="#60a5fa"/>
+                            <rect x="22" y="30" width="10" height="6" rx="1" fill="#93c5fd"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-title">Modern & Clean Design</h3>
+                    <p class="why-description">Sleek and innovative interfaces</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="14" fill="#0d6efd"/>
+                            <path d="M32 18 L40 26 L32 34 L24 26 Z" fill="#60a5fa"/>
+                            <path d="M32 34 L40 42 L32 50 L24 42 Z" fill="#93c5fd"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-title">Scalable Tech Solutions</h3>
+                    <p class="why-description">Built for performance and growth</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <path d="M22 34 L28 40 L42 26" stroke="#0d6efd" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="32" cy="32" r="18" stroke="#60a5fa" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-title">Customer-Focused</h3>
+                    <p class="why-description">Your success is our priority</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <h2 class="section-title">Our Work</h2>
+            <div class="portfolio-carousel">
+                <button class="carousel-btn prev" id="prevBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                
+                <div class="portfolio-track" id="portfolioTrack">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image zoom-hover">
+                            <svg viewBox="0 0 400 300" class="project-preview">
+                                <rect width="400" height="300" fill="#1e3a8a"/>
+                                <rect x="20" y="20" width="360" height="260" fill="#3b82f6"/>
+                                <rect x="40" y="40" width="140" height="90" rx="4" fill="#60a5fa"/>
+                                <rect x="200" y="40" width="140" height="35" rx="4" fill="#93c5fd"/>
+                                <rect x="200" y="85" width="140" height="35" rx="4" fill="#dbeafe"/>
+                                <circle cx="270" cy="180" r="35" fill="#0d6efd"/>
+                                <path d="M270 160 L270 200 M250 180 L290 180" stroke="white" stroke-width="4"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <button class="btn-view-project" data-project="0">View Project</button>
+                            </div>
+                        </div>
+                        <h3 class="portfolio-title">E-Commerce Platform</h3>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image zoom-hover">
+                            <svg viewBox="0 0 400 300" class="project-preview">
+                                <rect width="400" height="300" fill="#f8f9fa"/>
+                                <rect x="30" y="40" width="140" height="220" rx="8" fill="#1e293b"/>
+                                <rect x="40" y="50" width="120" height="190" fill="#3b82f6"/>
+                                <rect x="50" y="60" width="50" height="40" rx="3" fill="#60a5fa"/>
+                                <rect x="50" y="110" width="100" height="15" rx="3" fill="#93c5fd"/>
+                                <rect x="50" y="135" width="100" height="15" rx="3" fill="#dbeafe"/>
+                                <circle cx="100" cy="200" r="25" fill="#0d6efd"/>
+                                <rect x="230" y="40" width="140" height="220" rx="8" fill="#1e293b"/>
+                                <rect x="240" y="50" width="120" height="190" fill="#60a5fa"/>
+                                <circle cx="300" cy="140" r="25" fill="#0dcaf0"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <button class="btn-view-project" data-project="1">View Project</button>
+                            </div>
+                        </div>
+                        <h3 class="portfolio-title">Mobile Banking App</h3>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image zoom-hover">
+                            <svg viewBox="0 0 400 300" class="project-preview">
+                                <rect width="400" height="300" fill="#0f172a"/>
+                                <rect x="40" y="40" width="320" height="220" fill="#1e3a8a"/>
+                                <rect x="60" y="60" width="110" height="70" rx="4" fill="#3b82f6"/>
+                                <rect x="190" y="60" width="130" height="28" rx="4" fill="#60a5fa"/>
+                                <rect x="190" y="98" width="130" height="28" rx="4" fill="#93c5fd"/>
+                                <rect x="60" y="150" width="260" height="80" rx="4" fill="#60a5fa"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <button class="btn-view-project" data-project="2">View Project</button>
+                            </div>
+                        </div>
+                        <h3 class="portfolio-title">Corporate Website</h3>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image zoom-hover">
+                            <svg viewBox="0 0 400 300" class="project-preview">
+                                <rect width="400" height="300" fill="#dbeafe"/>
+                                <rect x="50" y="50" width="300" height="200" rx="8" fill="#3b82f6"/>
+                                <circle cx="200" cy="120" r="35" fill="#0d6efd"/>
+                                <rect x="100" y="180" width="200" height="18" rx="9" fill="#60a5fa"/>
+                                <rect x="120" y="210" width="160" height="18" rx="9" fill="#93c5fd"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <button class="btn-view-project" data-project="3">View Project</button>
+                            </div>
+                        </div>
+                        <h3 class="portfolio-title">SaaS Dashboard</h3>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="nextBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-carousel">
+                <button class="carousel-btn prev" id="prevTestimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <div class="star-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">Next Web exceeded our expectations! The team delivered a stunning website that perfectly represents our brand.</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50" fill="#e0f2fe"/>
+                                    <circle cx="50" cy="40" r="18" fill="#0d6efd"/>
+                                    <path d="M25 85 Q25 60 50 60 Q75 60 75 85" fill="#0d6efd"/>
+                                </svg>
+                            </div>
+                            <div class="client-details">
+                                <h4 class="client-name">Sarah M.</h4>
+                                <p class="client-position">CEO, Tech Corp</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <div class="star-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">Working with Next Web was a great experience. They understood our needs and made the process seamless.</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50" fill="#dbeafe"/>
+                                    <circle cx="50" cy="40" r="18" fill="#0d6efd"/>
+                                    <path d="M25 85 Q25 60 50 60 Q75 60 75 85" fill="#0d6efd"/>
+                                </svg>
+                            </div>
+                            <div class="client-details">
+                                <h4 class="client-name">James R.</h4>
+                                <p class="client-position">Founder, E-Shop</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <div class="star-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">The SEO services have significantly boosted our online presence. Highly recommend their expertise!</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="50" fill="#bae6fd"/>
+                                    <circle cx="50" cy="40" r="18" fill="#0d6efd"/>
+                                    <path d="M25 85 Q25 60 50 60 Q75 60 75 85" fill="#0d6efd"/>
+                                </svg>
+                            </div>
+                            <div class="client-details">
+                                <h4 class="client-name">Linda K.</h4>
+                                <p class="client-position">Marketing Director</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="nextTestimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="carousel-dots" id="testimonialDots"></div>
+        </section>
+""
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Discuss Your Project</h2>
+                    <p class="contact-subtitle">Our expert team is waiting for you! Tell us about your biggest project. Have a question? We'd love to make something amazing.</p>
+                </div>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <!-- Web3Forms Access Key (Hidden) -->
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+                    <input type="hidden" name="subject" value="New Contact Form Submission from Next Web">
+                    <input type="hidden" name="from_name" value="Next Web Contact Form">
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" id="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input form-textarea" id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">Send Message</button>
+                    <div class="success-message" id="successMessage">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        <span>Message sent successfully! We'll get back to you soon.</span>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 4L21 12L3 20V4Z" fill="white"/>
+                        </svg>
+                        <span>Next Web</span>
+                    </div>
+                    <p class="footer-description">Building digital solutions that drive growth for modern businesses.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.14 2.14 4-.79-.03-1.53-.24-2.18-.6v.06c0 2.33 1.66 4.28 3.86 4.72-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.62 1.94 2.42 3.35 4.55 3.39-1.67 1.31-3.77 2.09-6.05 2.09-.39 0-.78-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Next Web. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Portfolio Modal/Lightbox -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-mobile-cta">
+        <button class="btn-primary">Get Started</button>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar">
+        <div class="scroll-progress-fill"></div>
+    </div>
+
+    <!-- WhatsApp Chat Widget -->
+    <a href="https://wa.me/923097553991?text=Hello%20Next%20Web!%20I'm%20interested%20in%20your%20services." 
+       class="whatsapp-widget" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 0C7.164 0 0 7.164 0 16c0 2.825.738 5.488 2.031 7.794L.05 31.95l8.344-2.187A15.917 15.917 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.333c-2.444 0-4.75-.656-6.731-1.8l-.481-.288-5.006 1.313 1.338-4.888-.313-.5A13.25 13.25 0 012.667 16c0-7.363 5.97-13.333 13.333-13.333S29.333 8.637 29.333 16 23.363 29.333 16 29.333zm7.294-9.956c-.4-.2-2.369-1.169-2.738-1.3-.369-.131-.637-.2-.906.2-.269.4-1.038 1.3-1.275 1.569-.237.269-.475.3-.875.1-.4-.2-1.688-.625-3.213-1.988-1.188-1.063-1.988-2.375-2.219-2.775-.231-.4-.025-.619.175-.819.181-.181.4-.475.6-.713.2-.237.269-.4.4-.669.131-.269.069-.5-.031-.7-.1-.2-.906-2.188-1.244-2.994-.331-.788-.669-.681-.906-.694-.231-.012-.5-.019-.769-.019s-.7.1-1.069.5c-.369.4-1.406 1.375-1.406 3.356s1.438 3.894 1.638 4.163c.2.269 2.825 4.313 6.844 6.05.956.413 1.7.656 2.281.844.963.306 1.838.263 2.531.163.769-.119 2.369-.969 2.7-1.906.331-.938.331-1.738.231-1.906-.1-.169-.369-.269-.769-.469z"/>
+        </svg>
+    </a>
+
+    <!-- Login Modal -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-modal-overlay" id="authModalOverlay"></div>
+        <div class="auth-modal-content">
+            <button class="auth-modal-close" id="authModalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="signup">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <div class="auth-form-container active" id="loginForm">
+                <div class="auth-header">
+                    <h2 class="auth-title">Welcome Back</h2>
+                    <p class="auth-subtitle">Login to access your dashboard</p>
+                </div>
+                
+                <form class="auth-form" id="loginFormElement" novalidate>
+                    <div class="form-group">
+                        <label for="loginEmail" class="form-label">Email Address</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="input-icon">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <input type="email" class="form-input" id="loginEmail" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <span class="error-message" id="loginEmailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="input-icon">
+                                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                            </svg>
+                            <input type="password" class="form-input" id="loginPassword" name="password" placeholder="Enter your password" required>
+                            <button type="button" class="toggle-password" data-target="loginPassword">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="eye-icon">
+                                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <span class="error-message" id="loginPasswordError"></span>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe" name="rememberMe">
+                            <span class="checkbox-custom"></span>
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password" id="forgotPasswordLink">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-auth">
+                        <span class="btn-text">Login</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                    
+                    <div class="auth-divider">
+                        <span>or continue with</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="btn-social">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                            <span>Google</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="auth-form-container" id="signupForm">
+                <div class="auth-header">
+                    <h2 class="auth-title">Create Account</h2>
+                    <p class="auth-subtitle">Join Next Web today</p>
+                </div>
+                
+                <form class="auth-form" id="signupFormElement" novalidate>
+                    <div class="form-group">
+                        <label for="signupName" class="form-label">Full Name</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="input-icon">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                            <input type="text" class="form-input" id="signupName" name="name" placeholder="John Doe" required>
+                        </div>
+                        <span class="error-message" id="signupNameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signupEmail" class="form-label">Email Address</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="input-icon">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <input type="email" class="form-input" id="signupEmail" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <span class="error-message" id="signupEmailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signupPassword" class="form-label">Password</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="input-icon">
+                                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                            </svg>
+                            <input type="password" class="form-input" id="signupPassword" name="password" placeholder="Minimum 8 characters" required>
+                            <button type="button" class="toggle-password" data-target="signupPassword">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="eye-icon">
+                                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="password-strength" id="passwordStrength">
+                            <div class="strength-bar">
+                                <div class="strength-fill"></div>
+                            </div>
+                            <span class="strength-text"></span>
+                        </div>
+                        <span class="error-message" id="signupPasswordError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="input-icon">
+                                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                            </svg>
+                            <input type="password" class="form-input" id="signupConfirmPassword" name="confirmPassword" placeholder="Re-enter password" required>
+                        </div>
+                        <span class="error-message" id="signupConfirmPasswordError"></span>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                            <span class="checkbox-custom"></span>
+                            <span>I agree to the <a href="#" class="link-primary">Terms & Conditions</a></span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-auth">
+                        <span class="btn-text">Create Account</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                    
+                    <div class="auth-divider">
+                        <span>or continue with</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="btn-social">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                            <span>Google</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Forgot Password Form -->
+            <div class="auth-form-container" id="forgotPasswordForm">
+                <div class="auth-header">
+                    <button class="back-button" id="backToLogin">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                        </svg>
+                        <span>Back to Login</span>
+                    </button>
+                    <h2 class="auth-title">Reset Password</h2>
+                    <p class="auth-subtitle">Enter your email to receive reset instructions</p>
+                </div>
+                
+                <form class="auth-form" id="forgotPasswordFormElement" novalidate>
+                    <div class="form-group">
+                        <label for="resetEmail" class="form-label">Email Address</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="input-icon">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <input type="email" class="form-input" id="resetEmail" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <span class="error-message" id="resetEmailError"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-auth">
+                        <span class="btn-text">Send Reset Link</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
