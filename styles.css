@@ -2545,6 +2545,134 @@ a, button, .service-card, .portfolio-card, .testimonial-card {
     outline-offset: 2px;
 }
 
+/* Extra small devices (phones in portrait, less than 480px) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .service-card-front h3,
+    .service-card-back h3 {
+        font-size: 18px;
+    }
+
+    .why-card h3 {
+        font-size: 18px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 14px;
+    }
+
+    .auth-modal-content {
+        max-width: 100%;
+        margin: 10px;
+        border-radius: 12px;
+    }
+
+    .modal-content {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .top-nav {
+        padding: 12px 16px;
+        padding-left: 60px;
+    }
+
+    .btn-contact-top {
+        display: none;
+    }
+
+    .user-name {
+        max-width: 80px;
+    }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .hero-section {
+        padding: 100px 60px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-track {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonials-track {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .hero-title {
+        font-size: 64px;
+    }
+
+    .container {
+        max-width: 1320px;
+    }
+
+    .services-section,
+    .why-section,
+    .portfolio-section,
+    .testimonials-section,
+    .contact-section {
+        padding: 100px 60px;
+    }
+}
+
+/* Landscape orientation for mobile devices */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .sidebar {
+        overflow-y: auto;
+    }
+
+    .modal-content,
+    .auth-modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+}
+
 /* Print styles */
 @media print {
     .sidebar,
