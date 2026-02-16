@@ -258,9 +258,10 @@ body {
 }
 
 .mobile-logo-image {
-    height: 48px;
+    height: 56px;
     width: auto;
     object-fit: contain;
+    max-width: 200px;
 }
 
 .mobile-header-right {
@@ -2744,6 +2745,14 @@ a, button, .service-card, .portfolio-card, .testimonial-card {
     outline-offset: 2px;
 }
 
+/* Medium mobile devices (phones 481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .mobile-logo-image {
+        height: 60px;
+        max-width: 220px;
+    }
+}
+
 /* Extra small devices (phones in portrait, less than 480px) */
 @media (max-width: 480px) {
     .mobile-header {
@@ -2751,7 +2760,8 @@ a, button, .service-card, .portfolio-card, .testimonial-card {
     }
 
     .mobile-logo-image {
-        height: 44px;
+        height: 50px;
+        max-width: 180px;
     }
 
     .mobile-profile-icon {
