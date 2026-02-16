@@ -856,7 +856,7 @@ contactForm.addEventListener('submit', (e) => {
 async function sendContactEmail(formData) {
     // Web3Forms - Get your free access key at: https://web3forms.com
     
-    const web3formsKey = 'YOUR_WEB3FORMS_KEY'; // Replace with your actual key from web3forms.com
+    const web3formsKey = 'c8bc59b0-5a6b-4d5d-ad5b-e5712ad20d93'; // Your Web3Forms access key
     
     // Check if key is configured
     if (web3formsKey === 'YOUR_WEB3FORMS_KEY') {
