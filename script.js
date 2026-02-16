@@ -9,20 +9,31 @@ mobileMenuToggle.addEventListener('click', () => {
 
 // Mobile Profile Icon - Open Auth Modal
 const mobileProfileIcon = document.getElementById('mobileProfileIcon');
+const mobileProfileIconLoggedIn = document.getElementById('mobileProfileIconLoggedIn');
+
 if (mobileProfileIcon) {
     mobileProfileIcon.addEventListener('click', () => {
-        // Check if user is logged in
-        const isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true' || localStorage.getItem('isLoggedIn') === 'true';
-        
-        if (isLoggedIn) {
-            // Show user dropdown or profile options
-            // For now, we'll open the auth modal which will show logout option
-            authModal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        } else {
-            // Open login modal
-            authModal.classList.add('active');
-            document.body.style.overflow = 'hidden';
+        // Open login modal
+        authModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+}
+
+if (mobileProfileIconLoggedIn) {
+    mobileProfileIconLoggedIn.addEventListener('click', () => {
+        // Show logout confirmation
+        if (confirm('Do you want to logout?')) {
+            // Clear session
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('nextWebUser');
+            sessionStorage.removeItem('isLoggedIn');
+            sessionStorage.removeItem('nextWebUser');
+            
+            // Update UI
+            updateLoginState(false);
+            
+            // Show success message
+            alert('Logged out successfully!');
         }
     });
 }
@@ -1528,6 +1539,7 @@ forgotPasswordFormElement.addEventListener('submit', async (e) => {
 
 // Update Login State
 function updateLoginState(isLoggedIn, userName = 'User') {
+    // Desktop elements
     if (isLoggedIn) {
         // Hide auth buttons, show user profile dropdown
         authButtons.style.display = 'none';
@@ -1537,6 +1549,22 @@ function updateLoginState(isLoggedIn, userName = 'User') {
         // Show auth buttons, hide user profile dropdown
         authButtons.style.display = 'flex';
         userProfileDropdown.style.display = 'none';
+    }
+    
+    // Mobile elements
+    const mobileUserProfile = document.getElementById('mobileUserProfile');
+    const mobileProfileIcon = document.getElementById('mobileProfileIcon');
+    const mobileUserName = document.getElementById('mobileUserName');
+    
+    if (mobileUserProfile && mobileProfileIcon && mobileUserName) {
+        if (isLoggedIn) {
+            mobileUserProfile.style.display = 'flex';
+            mobileProfileIcon.style.display = 'none';
+            mobileUserName.textContent = userName;
+        } else {
+            mobileUserProfile.style.display = 'none';
+            mobileProfileIcon.style.display = 'flex';
+        }
     }
 }
 

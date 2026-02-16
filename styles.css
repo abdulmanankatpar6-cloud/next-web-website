@@ -269,6 +269,22 @@ body {
     align-items: center;
 }
 
+.mobile-user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .mobile-profile-icon {
     display: flex;
     align-items: center;
@@ -281,6 +297,11 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     color: var(--primary);
+}
+
+.mobile-profile-icon.logged-in {
+    background: var(--primary);
+    color: white;
 }
 
 .mobile-profile-icon:hover {
