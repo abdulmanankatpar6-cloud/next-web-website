@@ -4,13 +4,33 @@ const sidebar = document.getElementById('sidebar');
 
 mobileMenuToggle.addEventListener('click', () => {
     sidebar.classList.toggle('active');
+    mobileMenuToggle.classList.toggle('active');
 });
+
+// Mobile Profile Icon - Open Auth Modal
+const mobileProfileIcon = document.getElementById('mobileProfileIcon');
+if (mobileProfileIcon) {
+    mobileProfileIcon.addEventListener('click', () => {
+        // Check if user is logged in
+        const isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true' || localStorage.getItem('isLoggedIn') === 'true';
+        
+        if (isLoggedIn) {
+            // Show user dropdown or profile options
+            // For now, we'll open the auth modal which will show logout option
+            authModal.style.display = 'flex';
+        } else {
+            // Open login modal
+            authModal.style.display = 'flex';
+        }
+    });
+}
 
 // Close sidebar when clicking outside on mobile
 document.addEventListener('click', (e) => {
     if (window.innerWidth <= 768) {
         if (!sidebar.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
             sidebar.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
         }
     }
 });
