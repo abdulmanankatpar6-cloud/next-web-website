@@ -238,7 +238,7 @@ body {
 }
 
 .mobile-logo-image {
-    height: 32px;
+    height: 42px;
     width: auto;
     object-fit: contain;
 }
@@ -2731,7 +2731,7 @@ a, button, .service-card, .portfolio-card, .testimonial-card {
     }
 
     .mobile-logo-image {
-        height: 28px;
+        height: 36px;
     }
 
     .mobile-profile-icon {
