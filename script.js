@@ -17,10 +17,12 @@ if (mobileProfileIcon) {
         if (isLoggedIn) {
             // Show user dropdown or profile options
             // For now, we'll open the auth modal which will show logout option
-            authModal.style.display = 'flex';
+            authModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         } else {
             // Open login modal
-            authModal.style.display = 'flex';
+            authModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
     });
 }
