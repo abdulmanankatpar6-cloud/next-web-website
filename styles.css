@@ -201,25 +201,45 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: none;
+    width: 44px;
+    height: 44px;
+    background: rgba(13, 110, 253, 0.08);
+    border: 1px solid rgba(13, 110, 253, 0.2);
+    border-radius: 8px;
     cursor: pointer;
     padding: 0;
     transition: all 0.3s ease;
 }
 
+.mobile-menu-toggle:hover {
+    background: rgba(13, 110, 253, 0.12);
+    border-color: rgba(13, 110, 253, 0.3);
+}
+
+.mobile-menu-toggle:active {
+    transform: scale(0.95);
+}
+
 .mobile-menu-toggle span {
-    width: 22px;
-    height: 2px;
-    background: var(--text-dark);
+    width: 20px;
+    height: 2.5px;
+    background: var(--primary);
     border-radius: 2px;
     transition: all 0.3s ease;
 }
 
 .mobile-menu-toggle:hover span {
     background: var(--primary);
+    width: 22px;
+}
+
+.mobile-menu-toggle.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.mobile-menu-toggle.active span {
+    background: white;
 }
 
 .mobile-menu-toggle.active span:nth-child(1) {
