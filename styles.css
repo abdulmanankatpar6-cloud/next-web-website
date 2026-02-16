@@ -52,6 +52,13 @@ body {
     gap: 10px;
     font-size: 18px;
     font-weight: 700;
+    padding: 0 20px;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
 }
 
 .sidebar-nav {
@@ -230,10 +237,10 @@ body {
     text-decoration: none;
 }
 
-.mobile-logo svg {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
+.mobile-logo-image {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
 }
 
 .mobile-header-right {
@@ -2723,13 +2730,8 @@ a, button, .service-card, .portfolio-card, .testimonial-card {
         padding: 0 12px;
     }
 
-    .mobile-logo {
-        font-size: 16px;
-    }
-
-    .mobile-logo svg {
-        width: 22px;
-        height: 22px;
+    .mobile-logo-image {
+        height: 28px;
     }
 
     .mobile-profile-icon {
